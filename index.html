@@ -1,16 +1,23 @@
-<html>
-    <header>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    </header>
+    </head>
     <body>
         <img class="triangle-down" src="images/triangulo_superior_r.png">
         <img class="lateral-triangles" src="images/triangulos_laterales_a.png">
         <img class="triangle-borders" src="images/borde_web.png">
-        <h1>Un tÌtulo</h1>
-        <header><p>Novedades:</p></header>
+        <h1>V-Ritual</h1><br>
+        <select id="idioma">
+            <option value="spanish">Espa√±ol</option>
+            <option value="english">English</option>
+            <option value="catalan">Catal√°</option>
+        </select>
+        <header><p id="novedades">Novedades:</p></header>
         <div class="container">
             <div class="panel active" style="background-image: url(images/mgr.jpg);">
                 <h3>Metal Gear Rising</h3>
@@ -23,9 +30,10 @@
             </div>
         </div>
         <img class="triangle-colec" src="images/triangulo_coleccion.png">
-        <h2><p>ColecciÛn</p></h2>
+        <h2><p id="coleccion">Colecci√≥n</p></h2>
         <img class="triangle-bottom" src="images/triangulo_abajo.png">
-        <a href="articulos.html"><button>Ver todo</button></a>
-        <h3><p>Fin</p></h3>
+        <a href="articulos.html"><button id="verTodo">Ver todo</button></a>
+        <h3><p id="fin">Fin</p></h3>
+        <script src="idioma.js"></script>
     </body>
 </html>
